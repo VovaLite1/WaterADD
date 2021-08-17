@@ -5,7 +5,6 @@ var onBottom = level.connect(P1, {debounce: 3});
 // подключаем датчик на крышке бочки
 var onTop = level.connect(P2, {debounce: 3});
 var pump = require('@amperka/relay').connect(P5);
-var myButton = require('@amperka/button').connect(P4, {});
 
 var switchOn = function() {
   // включаем насос
